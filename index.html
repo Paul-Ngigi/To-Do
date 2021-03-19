@@ -20,15 +20,15 @@
     <!-- Navigation Section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fas fa-th-list"></i></a>
+            <a class="navbar-brand text-success"><i class="fas fa-th-list"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Add a To-Do Item</a>
+                    <a class="nav-link active" aria-current="page" href="#landing-page">Home</a>
+                    <a class="nav-link" href="#add-item">Add a To-Do Item</a>
                     <a class="nav-link" href="#">Sign Up</a>
                 </div>
             </div>
@@ -37,57 +37,103 @@
 
     <div class="container">
         <!-- Landing Page -->
-        <div class="row mt-5 p-5 bg-info">
-            <div class="col-md-12">
-                <h1><i class="fas fa-clipboard-list"></i> Welcome to my To-Do app</h1>
-                <p>Have a chance to record your plans in an organized manner and avoid forgetting what you had planned
-                    for.</p>
+        <div id="landing-page">
+            <div class="row mt-5 p-5 bg-info">
+                <div class="col-md-12">
+                    <h1><i class="fas fa-clipboard-list"></i> Welcome to my To-Do app</h1>
+                    <p>Have a chance to record your plans in an organized manner and avoid forgetting what you had
+                        planned
+                        for.</p>
+                </div>
+            </div>
+            <div class="row mt-5 p-5 bg-dark text-white">
+                <div class="col-md-12">
+                    <h2 class="text-success">App Features</h2>
+                    <h5>The app has great features to let you have a wonderful moment using it.</h5>
+                </div>
+                <div class="col-md-4 text-dark">
+                    <div class="card h-100">
+                        <div class="card-header text-white bg-success">
+                            <h4>Input Text</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Have a chance to put some descriptive text about your To-Do item, in a manner that is
+                                easy to
+                                remember</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#add-item"><button type="button" class="btn btn-secondary">Add a To-Do</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-dark">
+                    <div class="card h-100">
+                        <div class="card-header text-white bg-primary">
+                            <h4>Add Time</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Set the time you expect to have your activity to as to be more specific on your time
+                                management</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#add-item"><button type="button" class="btn btn-secondary">Add a To-Do</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-dark">
+                    <div class="card h-100">
+                        <div class="card-header text-white bg-danger">
+                            <h4>Add Day</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Not only can the app add lists' on today's To-Do's but can also add activities on other
+                                days
+                                in the calender</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#add-item"><button type="button" class="btn btn-secondary">Add a To-Do</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row mt-5 p-5 bg-dark text-white">
-            <div class="col-md-12">
-                <h2 class="text-success">App Features</h2>
-                <h5>The app has great features to let you have a wonderful moment using it.</h5>
-            </div>
-            <div class="col-md-4 text-dark">
-                <div class="card h-100">
-                    <div class="card-header text-white bg-success">
-                        <h4>Input Text</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>Have a chance to put some descriptive text about your To-Do item, in a manner that is easy to
-                            remember</p>
-                    </div>
-                    <div class="card-footer">
-                        <button type="button" class="btn btn-secondary">Add a To-Do</button>
-                    </div>
+
+        <!-- Add-Item Page -->
+        <div id="add-item">
+            <div class="row mt-5 p-5">
+                <div class="col-md-6">
+                    <form>
+                        <h2>Fill in the form below</h2>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">To-Do Message</label>
+                            <input type="text" class="form-control" id="todoMessage" placeholder="I've got to.....">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Time</label>
+                            <input type="time" class="form-control" id="time">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="time">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add To-Do</button>
+                    </form>
                 </div>
-            </div>
-            <div class="col-md-4 text-dark">
-                <div class="card h-100">
-                    <div class="card-header text-white bg-primary">
-                        <h4>Add Time</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>Set the time you expect to have your activity to as to be more specific on your time
-                            management</p>
-                    </div>
-                    <div class="card-footer">
-                        <button type="button" class="btn btn-secondary">Add a To-Do</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-dark">
-                <div class="card h-100">
-                    <div class="card-header text-white bg-danger">
-                        <h4>Add Day</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>Not only can the app add lists' on today's To-Do's but can also add activities on other days
-                            in the calender</p>
-                    </div>
-                    <div class="card-footer">
-                        <button type="button" class="btn btn-secondary">Add a To-Do</button>
+                <div class="col-md-6">
+                    <div class="todoTable">
+                        <h2>To-Do List</h2>
+                    <table class="table table-dark table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">To-Do</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Day</th>
+                          </tr>
+                        </thead>
+                        <tbody class="todoTBody">
+                          
+                        </tbody>
+                      </table>
                     </div>
                 </div>
             </div>
